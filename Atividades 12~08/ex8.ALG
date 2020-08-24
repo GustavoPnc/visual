@@ -1,0 +1,39 @@
+Algoritmo "semnome"
+//
+//
+// Descrição   : Aqui você descreve o que o programa faz! (função)
+// Autor(a)    : Nome do(a) aluno(a)
+// Data atual  : 16/08/2020
+Var
+   // Seção de Declarações das variáveis
+   QTDTIPO1,QTDTIPO2,QTDTIPO3:INTEIRO
+   TOTAL,QTDTOTAL,TIPOPICOLE:REAL
+
+Inicio
+   // Seção de Comandos, procedimento, funções, operadores, etc...
+   REPITA
+      ESCREVAL("QUAL O TIPO DE PICOLÉ VENDIDO?")
+      ESCREVAL("DIGITE 1 PARA TIPO 1")
+      ESCREVAL("DIGITE 2 PARA TIPO 2")
+      ESCREVAL("DIGITE 3 PARA TIPO 3")
+      ESCREVAL("DIGITE 0 PARA SAIR")
+      LEIA(TIPOPICOLE)
+      ESCOLHA TIPOPICOLE
+      CASO 1
+         QTDTIPO1:=QTDTIPO1+1
+      CASO 2
+         QTDTIPO2:=QTDTIPO2+1
+      CASO 3
+         QTDTIPO3:=QTDTIPO3+1
+      FIMESCOLHA
+   ATE TIPOPICOLE=0
+   TOTAL:=QTDTIPO1*0.50+QTDTIPO2*0.60+QTDTIPO3*0.25
+   QTDTOTAL:=QTDTIPO1+QTDTIPO2+QTDTIPO3
+   ESCREVAL("A QUANTIDADE VENDIDA FOI:")
+   ESCREVAL("QUANTIDADE DO TIPO 1: ",QTDTIPO1)
+   ESCREVAL("QUANTIDADE DO TIPO 2: ",QTDTIPO2)
+   ESCREVAL("QUANTIDADE DO TIPO 3: ",QTDTIPO3)
+   ESCREVAL("A QUANTIDADE TOTAL: ",QTDTOTAL)
+   ESCREVAL("O VALOR TOTAL ARRECADADO FOI R$",TOTAL:4:2)
+
+Fimalgoritmo
